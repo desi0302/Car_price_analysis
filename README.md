@@ -1,3 +1,4 @@
+
 # Car price analysis
 
 **Car price analysis** is a tool that examines how various factors influence vehicle pricing.
@@ -14,23 +15,17 @@
 
 
 ## Hypothesis and how to validate?
-* Market price distribution: Histogram/density plot to assess price concentration and skewness.
- - Hypothesis: The car market may have a concentration of models within a specific price range, with fewer budget and luxury options, which could impact market targeting and inventory planning. Use a histogram or density plot of car prices to visually assess the distribution shape and identify skewness.
-* Brand price positioning: Grouped bar charts/boxplots to compare average prices across brands.
- - Certain brands may consistently position their vehicles at higher price points, reflecting premium market strategies and brand equity. Compare average prices across brands using grouped bar charts and boxplots to visually identify price differences.
-* Performance specs vs price: Correlation heatmap/bar chart to explore relationships between features and price.
- - Performance-related specifications (horsepower, engine size, curb weight, car width) may drive higher pricing, while higher fuel efficiency could be associated with more budget-friendly segments. Use a correlation heatmap and bar chart of correlation coefficients to explore relationships between numerical features and price.
-* Segment clustering: Bubble/multivariate scatter plots to visualize premium vs economy clusters.
- - Heavier, more powerful, and less fuel-efficient vehicles may dominate the premium segment, while lighter, fuel-efficient cars may compete in the economy segment. Create bubble/multivariate scatter plots with curb weight, horsepower (bubble size), and highway MPG (color) against price to observe clustering patterns.
-* Price hierarchy: Sunburst plot to show hierarchical price structures by brand, model, and fuel type. 
- - Price structures may follow a hierarchy across brand, model, and fuel type, where certain combinations are strategically positioned to target premium or economy markets. Build a sunburst plot to visualize pricing hierarchies and compare category averages visually.
+* Market price distribution: Most cars may fall within a mid-range price, with fewer budget and luxury options. Validate with a histogram or density plot to assess distribution and skewness.
+* Brand price positioning: Some brands may consistently command higher prices, reflecting premium strategies. Validate with grouped bar charts and boxplots comparing average prices by brand.
+* Performance specs vs price: Features like horsepower, engine size, curb weight, and car width may drive higher prices, while fuel efficiency may lower them. Validate with correlation heatmaps and bar charts of feature-price relationships.
+* Segment clustering: Premium cars may be heavier, more powerful, and less fuel-efficient, while economy cars are lighter and more efficient. Validate with bubble/multivariate scatter plots (curb weight, horsepower, highway MPG vs price).
+* Price hierarchy: Price structures may follow a hierarchy across brand, model, and fuel type, with certain combinations targeting premium or economy markets. Validate with a sunburst plot visualizing pricing hierarchies and category averages.
 
 ## Project Plan
-Project Plan
 * Data is collected, cleaned, and organized for analysis.
 * Key features are engineered and visualized to test business hypotheses.
-* Data is managed in structured folders and processed in Jupyter notebooks for reproducibility.
-* Visual, exploratory methods are chosen for their clarity and effectiveness in revealing patterns and supporting business decisions.
+* Data and analysis are managed in folders and Jupyter notebooks.
+* Visual methods are used to reveal patterns and support decisions.
 
 ## The rationale to map the business requirements to the Data Visualisations
 * Understand price distribution:
@@ -45,17 +40,24 @@ Rationale: Correlation heatmaps and bar charts show which specifications (e.g., 
 * Segment the market by vehicle characteristics:
 Rationale: Bubble/multivariate scatter plots visualize clusters of premium vs economy vehicles, informing segmentation and targeted marketing.
 
-*Reveal hierarchical price structures:
+* Reveal hierarchical price structures:
 Rationale: Sunburst plots illustrate how brand, model, and fuel type interact to form pricing hierarchies, supporting strategic product placement and market analysis.
 
 ## Analysis techniques used
 * Data analysis methods: Descriptive statistics, correlation analysis, and a variety of visualizations including histograms, bar charts, scatter plots, and sunburst plot.
 * Structure of techniques: The analysis progressed from general distribution insights (descriptive statistics, histograms) to exploring specific feature relationships (correlation analysis, scatter plots, sunburst plots), ensuring each step supported the business hypotheses and built on previous findings.
 * Data limitations: None identified.
-* Use of generative AI tools: Completing my first full-cycle data analytics project — from defining hypotheses through ETL, analysis, and visualization — in just 2 days was extremely challenging. The tight deadline required focusing on essentials and delivering a minimum viable product, which is why AI support proved highly valuable — primarily to refine hypotheses, guide analysis steps, and optimize code within the limited timeframe.
+* Use of generative AI tools: Completing my first full-cycle data analytics project — from defining hypotheses through ETL, analysis, and visualization — in just 2 days was extremely challenging. The tight deadline required focusing on essentials and delivering a minimum viable product, which is why AI support proved highly valuable — primarily to refine hypotheses, guide analysis steps, and optimize code within the limited timeframe. 
 
-## Ethical considerations
-* No ethical considerations
+## Visualisation Screenshots
+Screenshot files are placed in the jupyter_notebooks folder to provide static visual references for some key plots. They were added because interactive visualizations created in Jupyter notebooks did not display correctly on GitHub.
+Screenshots added:
+- scr_bubble.png
+- scr_fuel.png
+- scr_sun1.png
+- scr_sun2.png
+- scr_sun3.png
+- scr_sun4.png
 
 ## Unfixed Bugs
 * No unresolved bugs; all issues that arose during the project were addressed and resolved.
@@ -63,7 +65,8 @@ Rationale: Sunburst plots illustrate how brand, model, and fuel type interact to
 
 ## Development Roadmap
 * One major challenge was managing the full cycle of my first data analytics project under tight time pressure. I also encountered gaps in statistical knowledge, coding confidence, and planning how to present insights effectively. To address these, I used AI tools to refine hypotheses, guide analysis steps, and optimize code. I supplemented this with resources from websites, YouTube channels, KPIs, and personal notes from classes to quickly fill knowledge gaps. An exploratory approach proved effective — beginning with dataset examination, identifying key findings, and then developing hypotheses to test.
-* Based on this project, I plan to strengthen my statistical analysis skills, improve Python coding efficiency, and develop more structured data storytelling techniques. I also intend to deepen my knowledge of visualization tools to create more impactful and interactive dashboards. 
+* Some planned steps, such as encoding categorical variables and additional visualizations, were included in the preliminary blueprint of my project but were not performed due to time constraints. These can be considered for future work.
+* Based on this project, I plan to strengthen my statistical analysis skills, improve Python coding efficiency, and develop more structured data storytelling techniques. I also intend to deepen my knowledge of visualization tools.
 
 
 ## Main Data Analysis Libraries
@@ -73,7 +76,7 @@ Example: Reading the dataset into a DataFrame, handling missing values, and crea
 Example: Performing array-based computations to support correlation and descriptive statistics.
 * Matplotlib – Used for creating static visualizations.
 Example: Plotting histograms to visualize the distribution of car prices.
-*Seaborn – Used for creating aesthetically enhanced visualizations and statistical plots.
+* Seaborn – Used for creating aesthetically enhanced visualizations and statistical plots.
 Example: Drawing correlation heatmaps to examine relationships between numerical features and price.
 * Plotly – Used for interactive visualizations.
 Example: Creating sunburst plots to visualize price hierarchy by brand, model, and fuel type.
@@ -90,7 +93,7 @@ Example: Creating sunburst plots to visualize price hierarchy by brand, model, a
 
 * https://www.geeksforgeeks.org/python/how-to-standardize-data-in-a-pandas-dataframe/
 
-* ChatGPT & Copilot
+* AI
 
 ## Acknowledgements 
-* A big thank you to Vasi, Mark, Roman, and Neil for all the support and guidance along the way
+* Many thanks to Vasi, Mark, Roman, and Neil for all of their help and advice.
